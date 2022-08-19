@@ -3,7 +3,7 @@ Collections in Python = List,dict,set,tuple   *Interview QA*
 Lists are used to store multiple items in a single variable.(collection of ordered,mutable data)
 Python has a great built-in list type named "list".
 List literals are written within square brackets [ ].
-List can have same or diff data types.  list = [1,2,3,'a','hello']
+List can have same or diff data types.  list = [1,2,3,'a','hello',40.8]
 Lists work similarly to strings -- use the len() function and square brackets [ ] to access data,
 with the first element at index 0.
 
