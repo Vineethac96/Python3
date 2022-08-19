@@ -1,6 +1,7 @@
 '''
 Collections in Python = List,dict,set,tuple   *Interview QA*
-Lists are used to store multiple items in a single variable.(collection of ordered,mutable data)
+Lists are used to store multiple items in a single variable.(collection of ordered, mutable data
+(Mutable objects are objects that can be modified after being created. Some examples of mutable objects in Python are lists, dictionaries and sets)
 Python has a great built-in list type named "list".
 List literals are written within square brackets [ ].
 List can have same or diff data types.  list = [1,2,3,'a','hello',40.8]
