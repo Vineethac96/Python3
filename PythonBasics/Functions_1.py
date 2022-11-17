@@ -1,20 +1,23 @@
-def call(): #non-parameterized
+def f1(): #non-parameterized
     print("hello")
 
-call()
+f1()   #calling func f1
+
 
 def test(a): #parameterized function
     print(a+10)
 
 test(10)
 
+
 #optional/default parameter
 def getCountryName(name="India"):
     print(name)
 
 getCountryName()
-getCountryName("UK")
-getCountryName(100)
+getCountryName("UK")  #callinf getCountryname with diff input parameter
+getCountryName(100)      #change data type also in python
+getCountryName([1,2,3])  #change data type also in python
 
 #pass a list to a function
 def getnames(list):
@@ -65,7 +68,6 @@ def login(username,password):
     print("login with %s and %s" %(username,password))
 
 login("vineetha","test@123")
-
 
 
 
