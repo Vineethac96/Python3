@@ -12,6 +12,16 @@ while (num<3):
 else:          #new concept in python, not present in Java
     print("bye")
 
+print("----------")
+
+name = ['Vineetha','Manoj','Shyni','Sumanth']
+i=0
+while(i<2):
+    print(name[i])
+    i+=1
+
+print("----------")
+
 #for loop
 name = ['Vineetha','Manoj','Shyni','Sumanth']
 for i in name:
@@ -28,16 +38,16 @@ for a in str:
 #range(5) - 0,1,2,3,4
 #
 
-list = ['Automation','in','Python']
+val = ['Automation','in','Python']
 for i in range(2):
-    print(list[i])
+    print(val[i])    #list[i] not just i as we are definig range not (for i in list)
 
-for i in range(len(list)): #when just mentioned list, it will print all elements,
-    print(list[i])
+for i in range(len(val)): #when just mentioned list, it will print all elements,
+    print(val[i])
 else:
     print("list is over")
 
-for i in range(3,50,2):
+for i in range(3,50,2):      #from 3 to 5 , increment by 2
     print(i)
 
 #nested loops  - pattern
@@ -46,4 +56,7 @@ for i in range(1,5):
         print("*",end='')
     print()
 
-
+for i in range(1,5):
+    for j in range(i):
+        print(i,end='')
+    print()
