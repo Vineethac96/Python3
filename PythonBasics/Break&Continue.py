@@ -21,7 +21,7 @@ for i in range(len(name)):
 if(flag):
     print("it works")
 
-'''say we have a array list of links, we search for a particular link with 'if' and perform click and break'''
+'''say we have a array list of links, we search for a particular link with 'if' and if found perform click and break'''
 
 
 for i in range(len(name)):
