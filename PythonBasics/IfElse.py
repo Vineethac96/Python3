@@ -1,7 +1,7 @@
-x = int(input("please enter the value")) #taking input at run time
+x = int(input("please enter the value\t")) #taking input at run time
 print(x+100)
 
-if x<0:
+if x<0:  #or if(x<0)
     print("x is negative number")
 elif x>0:
     print("x is posiive number")
@@ -23,15 +23,17 @@ if 10>5: #always evaluates to true
 a = 10
 b = 100
 c = 10000
+
 d = 5000
 
-'''if a>b and a>b:
+'''if a>b and a>c:
     print("a is greater")
 elif b>c:
     print("b is greater")
 else:
     print("c is greater")
     '''
+
 if a>b and a>c and a>d:
     print("a is greater")
 elif b>c and b>d:
@@ -42,7 +44,7 @@ else:
     print("d is greater")
 
 
-total = int(input("enter total amount"))
+total = int(input("enter total amount\t"))
 if total<100:
     total = total+10
 elif total>=100 and total<=500:
@@ -53,4 +55,5 @@ else:
 print(total)
 print("total="+str(total)) #but not +total as total is int type ,cannot concatenate str with int
 #or
-print(f'{"total="}{total}') #f string
+print(f'{"total="}{total}')  #f-string
+
