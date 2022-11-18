@@ -56,7 +56,7 @@ print(data1)
 
 #list and dict inside a dictionary
 
-prog = {'JS':'Atom', 'Python':['Pycharm','C++'], 'Java': {'JSE':'Netbeans', 'JEE':'Eclipse'} }
+prog = {'JS':'Atom', 'Python':['Pycharm','Pytest'], 'Java': {'JSE':'Netbeans', 'JEE':'Eclipse'} }
 print(prog)
 print(prog['Python'])
 print(prog['Python'][1])
@@ -91,6 +91,11 @@ print("-----")
 for x in thisdict:
     print(thisdict[x])
 
+#or
+print("-----")
+for x in thisdict.values():
+    print(x)
+
 #Loop through both keys and values, by using the items() method:
 for x, y in thisdict.items():
   print(x,"=", y)
@@ -99,21 +104,26 @@ for x, y in thisdict.items():
 #Create three dictionaries, then create one dictionary that will contain the other three dictionaries:
 child1 = {
   "name" : "Emil",
-  "year" : 2004
+  "year" : 2004,
+  "interests" : {"Maths","Science"}
 }
 child2 = {
   "name" : "Tobias",
-  "year" : 2007
+  "year" : 2007,
+  "interests" : ("TV","Cooking")
 }
 child3 = {
   "name" : "Linus",
-  "year" : 2011
+  "year" : 2011,
+  "interests" : [10,20]
 }
 
 myfamily = {
-  "child1" : child1,
-  "child2" : child2,
-  "child3" : child3
+  "C1" : child1,
+  "C2" : child2,
+  "C3" : child3
 }
 
 print(myfamily)
+print(myfamily.values())
+
