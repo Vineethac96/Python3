@@ -15,4 +15,4 @@ E1 = Employee()
 
 #access private/hidden variable using tricky syntax:(_classname__membername)
 print(E1._Employee__salary)
-print(t)
+
