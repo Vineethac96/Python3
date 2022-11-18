@@ -16,19 +16,19 @@ print(s2)                              #prints {1,2,3,4,5}
 
 #set() function
 s3 = set("Python")                     #creates a set object
-print(s3)                              #{'n', 'y', 'h', 'o', 't', 'P'}
+print(s3)                              #{'n', 'y', 'h', 'o', 't', 'P'} -prints in random order
 
 s4 = set([10,20,30,10])                #converts list to set and removes duplicates
 print(s4)
 
-s5 = set((20,45,57,45))                #coverts tuple to set
+s5 = set((20,45,57,45))                #coverts tuple to set and removes duplicates
 print(s5)
 
 
 #while creating a set object, we can store only Numbers,strings,tuple
 #List and dict are not allowed, we can pass in set() function, but not while creating
 
-set1 = {10,20,(40,50),90}
+set1 = {10,20,(40,50),90,"Manoj"}
 print(set1)
 
 #set2 = {15,60,[4,6]}
@@ -37,20 +37,22 @@ print(set1)
 #set operations
 #union: |
 p1 = {1,2,3,33.3,"Blessy"}
-p2 = {4,5,6,"Tom",56,2}
-print(p1|p2)
+p2 = {4,5,6,"Tom",(56,2),33.3}
+print(p1|p2)            #merge both and removes duplicates
+#or
 print(p1.union(p2))
 print(p2.union(p1))
 
 #intersection: &  (Common)
-print(p1&p2)
-print(p1.intersection(p2))
+print(p1&p2)                 #using operator
+print(p1.intersection(p2))   #using method
 print(p2.intersection(p1))
 
 #differnece of sets: - (removes common elements)
-print(p1-p2)             #{1, 3, 'Blessy', 33.3}
+print(p1-p2)             #{1, 2, 3, 'Blessy'}-difference available in p1
 print(p1.difference(p2))
-print(p2-p1)             #{4, 5, 6, 'Tom', 56}
+
+print(p2-p1)             #{'Tom', 4, 5, 6, (56, 2)}
 print(p2.difference(p1))
 
 #symmateric differnece: ^   :removes duplicates
@@ -76,7 +78,7 @@ print(s1)
 
 #3. clear
 s1.clear()
-print(s1)     #blank set
+print(s1)     #blank set: set()
 
 #4. copy
 s1 = {1,2,3,"Blessy"}
