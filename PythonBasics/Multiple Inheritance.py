@@ -1,4 +1,5 @@
 #JAVA doesnt support multiple inheritance, but PYTHON supports
+#Multiple inheritance-inheriting from more than one class
 
 class Base1():          #default "object" is super class
 
@@ -10,9 +11,8 @@ class Base1():          #default "object" is super class
 class Base2():
 
     def __init__(self):
-        self.str2 = "Blessy"
+        self.str2 = "Manoj"
         print("Base 2")
-
 
 
 class Child(Base1, Base2):     #multiple inheritance
@@ -25,6 +25,7 @@ class Child(Base1, Base2):     #multiple inheritance
 
     def printStrings(self):
         print(self.str1, self.str2)
+        print("%s loves %s" %(self.str1,self.str2))
 
 
 Demo = Child()
