@@ -7,7 +7,7 @@ class Base(object):
 class Child(Base):
 
     def __init__(self,x,y):
-        Base.x = x       #parent class menbers can be accessed in child class
+        Base.x = x       #parent class menbers can be accessed in child class by <BaseClassName>.<datamember>  self-means that class
         self.y = y       #child class member "y"
 
     def printWork(self):
